@@ -35,6 +35,7 @@ ENCRYPTION_KEY='static-encryption-key'
 
 ```sh
 docker container run \
+    -d \
     --restart=always \
     --name backup-raspberry-pi \
     --mount type=bind,source=/home/some-user/.backup-rasperry-pis/.config.rc,target=/config.rc,readonly \
